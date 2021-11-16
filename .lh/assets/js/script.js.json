@@ -1,0 +1,30 @@
+{
+    "sourceFile": "assets/js/script.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1637023628425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1637024627846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-console.dir(window.document);\n\\ No newline at end of file\n+var buttonEl = document.querySelector(\"#save-task\");\r\n+console.log(buttonEl);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637034866617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,9 @@\n var buttonEl = document.querySelector(\"#save-task\");\r\n-console.log(buttonEl);\n\\ No newline at end of file\n+var tasksToDoEl = document.querySelector(\"#tasks-to-do\");\r\n+\r\n+buttonEl.addEventListener(\"click\", function() {\r\n+  var listItemEl = document.createElement(\"li\");\r\n+  listItemEl.className = \"task-item\";\r\n+  listItemEl.textContent = \"This is a new task.\";\r\n+  tasksToDoEl.appendChild(listItemEl);\r\n+});\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637035433087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n var buttonEl = document.querySelector(\"#save-task\");\r\n var tasksToDoEl = document.querySelector(\"#tasks-to-do\");\r\n \r\n-buttonEl.addEventListener(\"click\", function() {\r\n-  var listItemEl = document.createElement(\"li\");\r\n-  listItemEl.className = \"task-item\";\r\n-  listItemEl.textContent = \"This is a new task.\";\r\n-  tasksToDoEl.appendChild(listItemEl);\r\n-});\n\\ No newline at end of file\n+var createTaskHandler = function() {\r\n+    var listItemEl = document.createElement(\"li\");\r\n+    listItemEl.className = \"task-item\";\r\n+    listItemEl.textContent = \"This is a new task.\";\r\n+    tasksToDoEl.appendChild(listItemEl);\r\n+  }\r\n+\r\n+buttonEl.addEventListener(\"click\", createTaskHandler);\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1637023628425,
+            "name": "Commit-0",
+            "content": "console.dir(window.document);"
+        }
+    ]
+}

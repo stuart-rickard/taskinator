@@ -3,11 +3,39 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 7,
             "patches": [
                 {
                     "date": 1637022588154,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1637023968765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n     <header>\r\n         <h1 class=\"page-title\">Taskinator</h1>\r\n         <p>Click the button below to add a new task!</p>\r\n         <button class=\"btn\" >Add Task</button>\r\n+        <button class=\"btn\" >Add Task</button>\r\n     </header>\r\n     <main class=\"page-content\">\r\n         <section class=\"task-list-wrapper\">\r\n           <h2 class=\"list-title\">Tasks To Do</h2>\r\n"
+                },
+                {
+                    "date": 1637024032247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <header>\r\n         <h1 class=\"page-title\">Taskinator</h1>\r\n         <p>Click the button below to add a new task!</p>\r\n         <button class=\"btn\" >Add Task</button>\r\n-        <button class=\"btn\" >Add Task</button>\r\n+        <button class=\"btn2\" >Add Task</button>\r\n     </header>\r\n     <main class=\"page-content\">\r\n         <section class=\"task-list-wrapper\">\r\n           <h2 class=\"list-title\">Tasks To Do</h2>\r\n"
+                },
+                {
+                    "date": 1637024106801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n     <header>\r\n         <h1 class=\"page-title\">Taskinator</h1>\r\n         <p>Click the button below to add a new task!</p>\r\n         <button class=\"btn\" >Add Task</button>\r\n-        <button class=\"btn2\" >Add Task</button>\r\n     </header>\r\n     <main class=\"page-content\">\r\n         <section class=\"task-list-wrapper\">\r\n           <h2 class=\"list-title\">Tasks To Do</h2>\r\n"
+                },
+                {
+                    "date": 1637024216144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n     <header>\r\n         <h1 class=\"page-title\">Taskinator</h1>\r\n         <p>Click the button below to add a new task!</p>\r\n         <button class=\"btn\" >Add Task</button>\r\n+        <button class=\"btn2\" >Add Task</button>\r\n     </header>\r\n     <main class=\"page-content\">\r\n         <section class=\"task-list-wrapper\">\r\n           <h2 class=\"list-title\">Tasks To Do</h2>\r\n"
+                },
+                {
+                    "date": 1637024273118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n     <header>\r\n         <h1 class=\"page-title\">Taskinator</h1>\r\n         <p>Click the button below to add a new task!</p>\r\n         <button class=\"btn\" >Add Task</button>\r\n-        <button class=\"btn2\" >Add Task</button>\r\n     </header>\r\n     <main class=\"page-content\">\r\n         <section class=\"task-list-wrapper\">\r\n           <h2 class=\"list-title\">Tasks To Do</h2>\r\n"
+                },
+                {
+                    "date": 1637024526563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n <body>\r\n     <header>\r\n         <h1 class=\"page-title\">Taskinator</h1>\r\n         <p>Click the button below to add a new task!</p>\r\n-        <button class=\"btn\" >Add Task</button>\r\n+        <button class=\"btn\" id=\"save-task\" >Add Task</button>\r\n     </header>\r\n     <main class=\"page-content\">\r\n         <section class=\"task-list-wrapper\">\r\n           <h2 class=\"list-title\">Tasks To Do</h2>\r\n"
+                },
+                {
+                    "date": 1637034262143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     </header>\r\n     <main class=\"page-content\">\r\n         <section class=\"task-list-wrapper\">\r\n           <h2 class=\"list-title\">Tasks To Do</h2>\r\n-          <ul class=\"task-list\">\r\n+          <ul class=\"task-list\" id=\"tasks-to-do\">\r\n             <li class=\"task-item\">A task is going to be added soon!</li>\r\n           </ul>\r\n         </section>\r\n     </main>\r\n"
                 }
             ],
             "date": 1637022588154,
