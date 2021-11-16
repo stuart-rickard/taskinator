@@ -1,0 +1,18 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1637022588154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1637022588154,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Taskinator</title>\r\n    <link rel=\"stylesheet\" href=\"./assets/css/style.css\">\r\n</head>\r\n<body>\r\n    <header>\r\n        <h1 class=\"page-title\">Taskinator</h1>\r\n        <p>Click the button below to add a new task!</p>\r\n        <button class=\"btn\" >Add Task</button>\r\n    </header>\r\n    <main class=\"page-content\">\r\n        <section class=\"task-list-wrapper\">\r\n          <h2 class=\"list-title\">Tasks To Do</h2>\r\n          <ul class=\"task-list\">\r\n            <li class=\"task-item\">A task is going to be added soon!</li>\r\n          </ul>\r\n        </section>\r\n    </main>\r\n    <footer>\r\n        &copy;2020 by Taskinator\r\n    </footer>\r\n\r\n    <script src=\"./assets/js/script.js\"></script>\r\n</body>\r\n</html>"
+        }
+    ]
+}
