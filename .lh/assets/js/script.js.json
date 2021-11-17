@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1637023628425,
@@ -20,6 +20,26 @@
                 {
                     "date": 1637035433087,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n var buttonEl = document.querySelector(\"#save-task\");\r\n var tasksToDoEl = document.querySelector(\"#tasks-to-do\");\r\n \r\n-buttonEl.addEventListener(\"click\", function() {\r\n-  var listItemEl = document.createElement(\"li\");\r\n-  listItemEl.className = \"task-item\";\r\n-  listItemEl.textContent = \"This is a new task.\";\r\n-  tasksToDoEl.appendChild(listItemEl);\r\n-});\n\\ No newline at end of file\n+var createTaskHandler = function() {\r\n+    var listItemEl = document.createElement(\"li\");\r\n+    listItemEl.className = \"task-item\";\r\n+    listItemEl.textContent = \"This is a new task.\";\r\n+    tasksToDoEl.appendChild(listItemEl);\r\n+  }\r\n+\r\n+buttonEl.addEventListener(\"click\", createTaskHandler);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637108938696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+var formEl = document.querySelector(\"#task-form\");\n+var tasksToDoEl = document.querySelector(\"#tasks-to-do\");\n+\n+var createTaskHandler = function() {\n+    var listItemEl = document.createElement(\"li\");\n+    listItemEl.className = \"task-item\";\n+    listItemEl.textContent = \"This is a new task.\";\n+    tasksToDoEl.appendChild(listItemEl);\n+  }\n+\n+  formEl.addEventListener(\"submit\", createTaskHandler);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637109347409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+var formEl = document.querySelector(\"#task-form\");\n+var tasksToDoEl = document.querySelector(\"#tasks-to-do\");\n+\n+var createTaskHandler = function() {\n+\n+    event.preventDefault();\n+\n+    var listItemEl = document.createElement(\"li\");\n+    listItemEl.className = \"task-item\";\n+    listItemEl.textContent = \"This is a new task.\";\n+    tasksToDoEl.appendChild(listItemEl);\n+  }\n+\n+  formEl.addEventListener(\"submit\", createTaskHandler);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637109594904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+var formEl = document.querySelector(\"#task-form\");\n+var tasksToDoEl = document.querySelector(\"#tasks-to-do\");\n+\n+var createTaskHandler = function() {\n+\n+    event.preventDefault();\n+\n+    var listItemEl = document.createElement(\"li\");\n+    listItemEl.className = \"task-item\";\n+    listItemEl.textContent = \"This is a new task.\";\n+    tasksToDoEl.appendChild(listItemEl);\n+    console.log();\n+  }\n+\n+  formEl.addEventListener(\"submit\", createTaskHandler);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637109710530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+var formEl = document.querySelector(\"#task-form\");\n+var tasksToDoEl = document.querySelector(\"#tasks-to-do\");\n+\n+var createTaskHandler = function() {\n+\n+    event.preventDefault();\n+\n+    var listItemEl = document.createElement(\"li\");\n+    listItemEl.className = \"task-item\";\n+    listItemEl.textContent = \"This is a new task.\";\n+    tasksToDoEl.appendChild(listItemEl);\n+    console.log(event);\n+  }\n+\n+  formEl.addEventListener(\"submit\", createTaskHandler);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637109826811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+var formEl = document.querySelector(\"#task-form\");\n+var tasksToDoEl = document.querySelector(\"#tasks-to-do\");\n+\n+var createTaskHandler = function() {\n+\n+    event.preventDefault();\n+\n+    var listItemEl = document.createElement(\"li\");\n+    listItemEl.className = \"task-item\";\n+    listItemEl.textContent = \"This is a new task.\";\n+    tasksToDoEl.appendChild(listItemEl);\n+  }\n+\n+  formEl.addEventListener(\"submit\", createTaskHandler);\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1637023628425,
