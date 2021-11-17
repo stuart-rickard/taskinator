@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 8,
+            "activePatchIndex": 14,
             "patches": [
                 {
                     "date": 1637023628425,
@@ -40,6 +40,30 @@
                 {
                     "date": 1637109826811,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+var formEl = document.querySelector(\"#task-form\");\n+var tasksToDoEl = document.querySelector(\"#tasks-to-do\");\n+\n+var createTaskHandler = function() {\n+\n+    event.preventDefault();\n+\n+    var listItemEl = document.createElement(\"li\");\n+    listItemEl.className = \"task-item\";\n+    listItemEl.textContent = \"This is a new task.\";\n+    tasksToDoEl.appendChild(listItemEl);\n+  }\n+\n+  formEl.addEventListener(\"submit\", createTaskHandler);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637110339517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+var formEl = document.querySelector(\"#task-form\");\n+var tasksToDoEl = document.querySelector(\"#tasks-to-do\");\n+\n+var createTaskHandler = function() {\n+\n+    event.preventDefault();\n+    var taskNameInput = document.querySelector(\"input[name='task-name']\");\n+    console.dir(taskNameInput);\n+\n+    var listItemEl = document.createElement(\"li\");\n+    listItemEl.className = \"task-item\";\n+    listItemEl.textContent = \"This is a new task.\";\n+    tasksToDoEl.appendChild(listItemEl);\n+  }\n+\n+  formEl.addEventListener(\"submit\", createTaskHandler);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637110813991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+var formEl = document.querySelector(\"#task-form\");\n+var tasksToDoEl = document.querySelector(\"#tasks-to-do\");\n+\n+var createTaskHandler = function() {\n+\n+    event.preventDefault();\n+    var taskNameInput = document.querySelector(\"input[name='task-name']\").value;\n+\n+    var listItemEl = document.createElement(\"li\");\n+    listItemEl.className = \"task-item\";\n+    listItemEl.textContent = taskNameInput;\n+    tasksToDoEl.appendChild(listItemEl);\n+  }\n+\n+  formEl.addEventListener(\"submit\", createTaskHandler);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637111023434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,27 @@\n+var formEl = document.querySelector(\"#task-form\");\n+var tasksToDoEl = document.querySelector(\"#tasks-to-do\");\n+\n+var createTaskHandler = function() {\n+\n+    event.preventDefault();\n+    var taskNameInput = document.querySelector(\"input[name='task-name']\").value;\n+    var taskTypeInput = document.querySelector(\"select[name='task-type']\").value;\n+\n+    // create list item\n+    var listItemEl = document.createElement(\"li\");\n+    listItemEl.className = \"task-item\";\n+\n+    // create div to hold task info and add to list item\n+    var taskInfoEl = document.createElement(\"div\");\n+    // give it a class name\n+    taskInfoEl.className = \"task-info\";\n+    // add HTML content to div\n+    taskInfoEl.innerHTML = \"<h3 class='task-name'>\" + taskNameInput + \"</h3><span class='task-type'>\" + taskTypeInput + \"</span>\";\n+\n+    listItemEl.appendChild(taskInfoEl);\n+\n+    // add entire list item to list\n+    tasksToDoEl.appendChild(listItemEl);\n+  }\n+\n+formEl.addEventListener(\"submit\", createTaskHandler);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637111453900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,29 @@\n+var formEl = document.querySelector(\"#task-form\");\n+var tasksToDoEl = document.querySelector(\"#tasks-to-do\");\n+\n+var createTaskHandler = function() {\n+\n+    event.preventDefault();\n+    var taskNameInput = document.querySelector(\"input[name='task-name']\").value;\n+    var taskTypeInput = document.querySelector(\"select[name='task-type']\").value;\n+\n+    // create list item\n+    var listItemEl = document.createElement(\"li\");\n+    listItemEl.className = \"task-item\";\n+\n+    // create div to hold task info and add to list item\n+    var taskInfoEl = document.createElement(\"div\");\n+    // give it a class name\n+    taskInfoEl.className = \"task-info\";\n+    // add HTML content to div\n+    taskInfoEl.innerHTML = \"<h3 class='task-name'>\" + taskNameInput + \"</h3><span class='task-type'>\" + taskTypeInput + \"</span>\";\n+\n+    listItemEl.appendChild(taskInfoEl);\n+\n+    // add entire list item to list\n+    tasksToDoEl.appendChild(listItemEl);\n+\n+    console.dir(listItemEl);\n+  }\n+\n+formEl.addEventListener(\"submit\", createTaskHandler);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637111686455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,28 @@\n+var formEl = document.querySelector(\"#task-form\");\n+var tasksToDoEl = document.querySelector(\"#tasks-to-do\");\n+\n+var createTaskHandler = function() {\n+\n+    event.preventDefault();\n+    var taskNameInput = document.querySelector(\"input[name='task-name']\").value;\n+    var taskTypeInput = document.querySelector(\"select[name='task-type']\").value;\n+\n+    // create list item\n+    var listItemEl = document.createElement(\"li\");\n+    listItemEl.className = \"task-item\";\n+\n+    // create div to hold task info and add to list item\n+    var taskInfoEl = document.createElement(\"div\");\n+    // give it a class name\n+    taskInfoEl.className = \"task-info\";\n+    // add HTML content to div\n+    taskInfoEl.innerHTML = \"<h3 class='task-name'>\" + taskNameInput + \"</h3><span class='task-type'>\" + taskTypeInput + \"</span>\";\n+\n+    listItemEl.appendChild(taskInfoEl);\n+\n+    // add entire list item to list\n+    tasksToDoEl.appendChild(listItemEl);\n+\n+  }\n+\n+formEl.addEventListener(\"submit\", createTaskHandler);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1637111707612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,28 @@\n+var formEl = document.querySelector(\"#task-form\");\n+var tasksToDoEl = document.querySelector(\"#tasks-to-do\");\n+\n+var createTaskHandler = function() {\n+\n+    event.preventDefault();\n+    var taskNameInput = document.querySelector(\"input[name='task-name']\").value;\n+    var taskTypeInput = document.querySelector(\"select[name='task-type']\").value;\n+\n+    // create list item\n+    var listItemEl = document.createElement(\"li\");\n+    listItemEl.className = \"task-item\";\n+\n+    // create div to hold task info and add to list item\n+    var taskInfoEl = document.createElement(\"div\");\n+    // give it a class name\n+    taskInfoEl.className = \"task-info\";\n+    // add HTML content to div\n+    taskInfoEl.innerHTML = \"<h3 class='task-name'>\" + taskNameInput + \"</h3><span class='task-type'>\" + taskTypeInput + \"</span>\";\n+\n+    listItemEl.appendChild(taskInfoEl);\n+\n+    // add entire list item to list\n+    tasksToDoEl.appendChild(listItemEl);\n+\n+  };\n+\n+formEl.addEventListener(\"submit\", createTaskHandler);\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1637023628425,
